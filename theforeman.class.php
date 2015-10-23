@@ -38,8 +38,6 @@ class theforeman {
         $hosts = $this->query($hosts);
         $hosts = json_decode($hosts,true);
 
-        //print_r($hosts);
-
         foreach ($hosts['results'] as $host) {
 
             $hostnames[] = $host['name'];
